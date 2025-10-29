@@ -17,7 +17,6 @@ const ORDER = ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"] as const;
 export type PrayerKey = typeof ORDER[number];
 
 const GREEN = "#009972";
-const DANGER = "#ff3b30";
 
 const ICONS: Record<PrayerKey, JSX.Element> = {
     fajr: <PiSunHorizonLight />,

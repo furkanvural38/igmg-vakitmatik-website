@@ -58,8 +58,8 @@ export function CityProvider({ children }: { children: React.ReactNode }) {
             const weatherData = weatherResp.status === "fulfilled" ? weatherResp.value : null;
             const dailyData = daily.status === "fulfilled" ? daily.value : null;
 
-            const hijriLong = prayerData?.meta?.hijriDateLong ?? null;
-            const gregShort = prayerData?.meta?.gregorianDateShort ?? null;
+            const hijriLong = prayerData?.hijriDateLong ?? null;
+            const gregShort = prayerData?.gregorianDateShort ?? null;
 
             setState({
                 loading: false,
